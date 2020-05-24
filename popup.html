@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Multi login for Instagram</title>
+	<link href="css/popup.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="main">
+	<header class="header"></header>
+	<span class="expand_popup"></span>
+	<div class="no_users"></div>
+	<div class="list_users_wrap">
+
+	</div>
+	<div class="add_users_wrap">
+		<div class="add_btn_wrap">
+			<a type="button" href="#"><span>&#43;</span><span></span></a>
+		</div>
+		<div class="add_form_wrap">
+			<div class="form_input_wrap">
+				<input type="text" name="username">
+				<input type="password" name="password">
+			</div>
+			<div class="form_btn_wrap">
+				<button class="add_send"></button>
+				<button class="add_cancel"></button>
+			</div>
+			<div class="add_form_loader">
+				<span class="text"></span>
+				<span class="gif"></span>
+			</div>
+			<div class="error_message"></div>
+		</div>
+	</div>
+
+	<div class="user_item_wrap template" data-username="">
+		<span class="data_user_wrap">
+			<a>
+				<img class="user_icon" src="/img/avatar_empty.jpg">
+			</a>
+			<span class="username"></span>
+			<button class="edit_pass_btn"></button>
+
+			<span class="remove_user"></span>
+		</span>
+		<div class="edit_pass_wrap">
+			<input type="password" name="password">
+			<button class="apply_pass"></button>
+			<button class="cancel_pass"></button>
+			<span class="edit_loader"></span>
+			<div class="error_message"></div>
+		</div>
+	</div>
+</div>
+
+
+	<script src="js/jquery.js"></script>
+	<script src="js/popup.js"></script>
+</body>
+</html>
